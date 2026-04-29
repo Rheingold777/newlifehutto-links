@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Life Hutto | Reach. Connect. Renew.</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛪</text></svg>">
+    <link rel="icon" href="logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -69,6 +69,15 @@
         
         .address a:hover {
             text-decoration: underline;
+        }
+
+        .address-marker {
+            width: 8px;
+            height: 8px;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            display: inline-block;
+            opacity: 0.9;
         }
         
         .tagline {
@@ -151,6 +160,10 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
+
+        .link-thumb-strong {
+            font-size: 0.7rem;
+        }
         
         .link-text {
             flex: 1;
@@ -185,7 +198,7 @@
         
         <!-- Address -->
         <div class="address">
-            <span>📍</span>
+            <span class="address-marker" aria-hidden="true"></span>
             <a href="https://maps.app.goo.gl/yJg19v31WePniLro7" target="_blank">
                 623 West Front Street, Suite 1800, Hutto, TX 78634
             </a>
@@ -225,23 +238,17 @@
             </a>
             
             <a href="https://www.youtube.com/channel/UCI8IODETqN8oBrFvL2BFpBA" class="link-btn" target="_blank">
-                <div class="link-thumb" style="background: linear-gradient(135deg, #1a1a2e, #2d3a4a);">
-                    <span style="color: #f0c040; font-size: 0.7rem; font-weight: 600;">Hope</span>
-                </div>
+                <div class="link-thumb"><span class="link-thumb-text link-thumb-strong">HOPE</span></div>
                 <span class="link-text">YouTube Channel</span>
             </a>
             
             <a href="https://newlifehutto.breezechms.com/give/online" class="link-btn" target="_blank">
-                <div class="link-thumb" style="background: linear-gradient(135deg, #2a3a4a, #1a2a3a);">
-                    <span style="font-size: 1.2rem;">⛵</span>
-                </div>
+                <div class="link-thumb"><span class="link-thumb-text link-thumb-strong">GIVE</span></div>
                 <span class="link-text">Give Secure Online</span>
             </a>
             
             <a href="https://www.newlifehutto.com/about-us" class="link-btn" target="_blank">
-                <div class="link-thumb" style="background: #3a3a3a;">
-                    <span class="link-thumb-text">HUTTO</span>
-                </div>
+                <div class="link-thumb"><span class="link-thumb-text">HUTTO</span></div>
                 <span class="link-text">Contact Us</span>
             </a>
         </div>
